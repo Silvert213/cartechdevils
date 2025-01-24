@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DesignQuest website</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Spectral, EB Garamond, Libre Baskerville;
+}
+
+/* Style the header */
+header {
+  background-color: #621909;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #fff8dc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #fdfcf3;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #621909;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+ }
+  
+ .info {
+  float: right;
+  padding: 20px;
+  width: 100%;
+  background-color:#fdfcf3;
+  height: 420px; /* only for demonstration, should be removed */
+}
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h1>Car Tech Devils</h1>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#Tech">Tech Devils</a></li>
+      <li><a href="#Hydro">Hydro-Devils 4.5</a></li>
+      <li><a href="#Sim">Safety Simulator</a></li>
+      <p> Ayaan - Jr. web developer <br> Nihal - Jr. Unity developer<br>
+      Nolan - Sr. Unity simulation developer<br>
+      Silver - Sr. web developer <br>
+      Julian - Marketing manager/designer <br>
+      Neel - Design manager <br>
+      Matthew - jr. web developer <br>
+      Leo - designer </p>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1 id="Tech">Tech Devils</h1>
+    <p>The team at Tech Devils is focused on the development of a new energy fueled car which doesn’t release toxic greenhouse gases into the atmosphere decreasing global warming.</p>
+    <p>  Our frontrunners in the simulation aspect Nihal and Nolan are focusing on the driving mechanics and safety features of the Car. The design team made up of Neel, Matthew and Leo focuses on the specific driving features within the car. Our design team also implements aerodynamics and ergonomics designs for comfort and efficiency. Our web developers Ayaan, Silver, and Julian focus on marketing and adding information to our starter website intriguing new buyers to invest in our product.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Cars Made Better.</p>
+</footer>
+
+ <article class= "info">
+    <h1 id="Hydro">Hydro-Devil 4.5</h1>
+    <p>Our car is hydro powered to make sure that it is environmentally friendly. This will lead to reduced environmental footprint, improved fuel efficiency, reduced emission amongst many other improvements.
+Did you know, over 1,300,000 people worldwide die from road accidents per year? As a result, our car will include up-to-date safety features.
+</p>
+    <p>Automatic Braking <br>
+Multiple motion sensors and camera that detects movement around the car. AI then analyzes the potential of a crash and makes the decision to decelerate or stop turning within a single millisecond. <br> Airbags (Internal) <br>
+	Internal airbags. Simple, but effective <br>
+
+Autopilot <br>
+The car will have a driver assistance system that will allow the car to steer, accelerate, and brake all on its own. Will allow driving to be easier and less accident prone. <br> Traffic Light Detection <br>
+		Alongside autopilot, our cars will be able to detect the current state of traffic lights during manual driving, such as when they’re green or red. </p>
+  </article>
+
+  <footer>
+    <p> Saftey Simulator </p>
+  </footer>
+
+   </article>
+    <h1 id="Sim">Simulation</h1>
+    <p>This interactive simulator allows you to test out the features of the Hydro-Devil 4.5</p>
+    <p> Inserts simulator here</p>
+  </article>
+</section>
+
